@@ -21,7 +21,7 @@ body{
 /* carousel */
 .carousel{
   width: 1200px;
-  height: 700px;
+  height: 600px;
   margin: 20px auto;
   display: flex;
   align-items: center;
@@ -55,7 +55,11 @@ body{
   font-size: 20px;
   margin-right: 10px;
 }
-
 .active{
   color: blue;
+}
+.carousel-description{
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
 }

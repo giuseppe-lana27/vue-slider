@@ -10,7 +10,7 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <!-- /google font -->    
+    <!-- /google font -->
     <!-- vue js  -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <!-- /vue js  -->
@@ -29,9 +29,12 @@
             <i class="fas fa-chevron-left" @click="prevImage"></i>
           </div>
           <div class="carousel-imgs">
-            <img :src="images[imgIndex]" alt="Carousel Images">
+            <img :src="images[imgIndex].img" alt="Carousel Images">
             <div class="carousel-bullets">
               <i class="fas fa-circle" v-for="(image, index) in images" :class="imgIndex == index ? 'active' : '' " @click="bulletImage(imgIndex = index)"></i>
+            </div>
+            <div class="carousel-description">
+              <h2>{{images[imgIndex].name}}</h2>
             </div>
           </div>
           <div class="next">
