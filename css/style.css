@@ -1,5 +1,26 @@
+/* reset */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+/* carousel */
+.carousel{
+  width: 800px;
+  height: 500px;
+  background-color: orange;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+}
+.carousel i{
+  font-size: 40px;
+  cursor: pointer;
+}
+.carousel-imgs{
+  height: 100%;  
+}
+.carousel-imgs img{
+  width: 100%;
+  /* object-fit: cover;   */
 }
