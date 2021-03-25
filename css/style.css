@@ -4,10 +4,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: orange;
+  font-family: 'Indie Flower', cursive;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 25px;
+}
+.title img{
+  height: 80px;
+}
 /* carousel */
 .carousel{
-  width: 800px;
-  height: 500px;
+  width: 1200px;
+  height: 700px;
   margin: 20px auto;
   display: flex;
   align-items: center;
@@ -19,11 +33,14 @@
 .carousel-imgs{
   height: 100%;
   position: relative;
+  margin: 0 20px;
 }
-.carousel img{
+.carousel-imgs img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  transition: 1s;
 }
 .carousel-bullets{
   background: rgba(0, 0, 0, 0.5);
