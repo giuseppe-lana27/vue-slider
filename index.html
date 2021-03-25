@@ -21,7 +21,10 @@
             <i class="fas fa-chevron-left" @click="prevImage"></i>
           </div>
           <div class="carousel-imgs">
-            <img :src="images[0]" alt="Carousel Images">
+            <img :src="images[imgIndex]" alt="Carousel Images">
+            <div class="carousel-bullets">
+              <i class="fas fa-circle"></i>
+            </div>
           </div>
           <div class="next">
             <i class="fas fa-chevron-right" @click="nextImage"></i>

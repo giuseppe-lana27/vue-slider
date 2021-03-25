@@ -18,8 +18,21 @@
 }
 .carousel-imgs{
   height: 100%;
+  position: relative;
 }
 .carousel-imgs img{
   width: 100%;
-  object-fit: cover;  
+  object-fit: cover;
+}
+.carousel-bullets{
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateY(-50%);
+}
+.carousel-bullets i{
+  font-size: 20px;
 }
