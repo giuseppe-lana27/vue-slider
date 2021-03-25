@@ -23,7 +23,7 @@
           <div class="carousel-imgs">
             <img :src="images[imgIndex]" alt="Carousel Images">
             <div class="carousel-bullets">
-              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle" v-for="(image, index) in images" :class="imgIndex == index ? 'active' : '' "></i>
             </div>
           </div>
           <div class="next">
