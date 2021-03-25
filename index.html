@@ -18,19 +18,17 @@
       <div class="carousel-wrap">
         <div class="carousel">
           <div class="prev">
-            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-left" @click="prevImage"></i>
           </div>
           <div class="carousel-imgs">
-            <img :src="images[2]" alt="Carousel Images">
+            <img :src="images[0]" alt="Carousel Images">
           </div>
           <div class="next">
-            <i class="fas fa-chevron-right"></i>
+            <i class="fas fa-chevron-right" @click="nextImage"></i>
           </div>
         </div>
       </div>
     </div>
-
-
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
